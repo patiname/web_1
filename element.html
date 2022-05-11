@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 1</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid salmon;
+        font-size: 30px;
+        display: inline;
+      }
+
+      a {
+        width: 300px;
+        height: 300px;
+        border: 3px solid salmon;
+        font-size: 30px;
+        display: block;
+        box-sizing: border-box;
+        /* =>테두리를 넣게되면 기본적으로 테두리가 바깥으로 적용되지만 
+        테두리를 안쪽으로 적용하고 싶을땐 box-sizing을 적용하면 됨 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- *블럭요소
+    =>가로값을 넣지 않더라도 스스로 전체 가득 참 
+    =>엘리먼트를 만들때 마다 자동으로 밑으로 떨어지는것 처럼 보임 
+    =>대표 태그: div, h1~h6, p, ul, li, header, section, footer -->
+
+    <!-- *인라인요소
+    =>크기값을 넣어도 인식 되지 않음 -> 태그 안쪽 글자기준으로 크기가 들어감
+    =>블럭요소와 다르게 여백 값이 없으므로 옆으로 정렬 됨 
+    =>대표 태그: a, i, b, big, span  -->
+
+    <div class="box">블럭요소</div>
+    <div class="box">블럭요소</div>
+
+    <a href="#">인라인 요소</a>
+    <a href="#">인라인 요소</a>
+  </body>
+</html>
