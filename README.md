@@ -2,4 +2,4 @@
 
 - [x] display
 - [x] float
-- [ ] position
+- [x] position

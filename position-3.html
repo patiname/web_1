@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position-3</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 2000px;
+      }
+
+      header {
+        width: 100%;
+        /* =>포지션 절대값을 넣을땐 반드시 가로값을 넣어줘야 보임 */
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        /* =>절대값 */
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+
+      section {
+        height: 400px;
+        background-color: lightblue;
+        font-size: 100px;
+        text-align: center;
+        line-height: 400px;
+        margin-top: 100px;
+      }
+
+      .top_btn {
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        border-radius: 50%;
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header></header>
+      <section>
+        <h1>Wow this is title</h1>
+      </section>
+
+      <div class="top_btn">TOP</div>
+    </div>
+  </body>
+</html>
