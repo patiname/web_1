@@ -17,18 +17,27 @@
         font-size: 50px;
         text-align: center;
         line-height: 200px;
+        position: absolute;
+        /* position: relative; */
       }
 
       .box_1 {
         background-color: crimson;
+        top: 0;
+        left: 0;
       }
 
       .box_2 {
         background-color: green;
+        top: 100px;
+        left: 100px;
+        z-index: 9;
       }
 
       .box_3 {
         background-color: lightblue;
+        top: 200px;
+        left: 200px;
       }
     </style>
   </head>
@@ -38,3 +47,15 @@
     <div class="box box_3">3</div>
   </body>
 </html>
+
+<!-- *position
+=>좌표값을 사용하여 엘리먼트 위치를 바꿀수 있음
+
+1.절대값
+=>absolute
+=>브라우저 좌측 상단이 0, 0
+
+2.상대값
+=>relative 
+=>엘리먼트 좌측 상단이 0, 0
+-->
