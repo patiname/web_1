@@ -1,5 +1,5 @@
 # Web one
 
 - [x] display
-- [ ] float
+- [x] float
 - [ ] position
